@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090c1b" />
+  <title>Neon Courier · GenaWeb</title>
+  <link rel="stylesheet" href="css/game.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <header class="game-header">
+      <a class="back-link" href="index.html">← Volver al portfolio</a>
+      <div class="brand-mark"><span>GENA</span><b>ARCADE</b></div>
+      <p class="status-pill"><i></i> SISTEMA ONLINE</p>
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow">MINIJUEGO WEB · 01</p>
+      <h1>Neon <em>Courier</em></h1>
+      <p class="subtitle">Entrega el paquete. Esquiva el caos.</p>
+    </section>
+
+    <section class="game-card" aria-label="Juego Neon Courier">
+      <div class="hud">
+        <div><span>PUNTOS</span><strong id="score">000000</strong></div>
+        <div><span>NIVEL</span><strong id="level">01</strong></div>
+        <div><span>RÉCORD</span><strong id="highScore">000000</strong></div>
+        <div><span>VIDAS</span><strong id="lives" aria-label="3 vidas">●●●</strong></div>
+      </div>
+      <div class="canvas-wrap">
+        <canvas id="gameCanvas" width="900" height="560" aria-label="Área de juego. Usa las flechas o WASD para moverte."></canvas>
+        <div class="screen" id="startScreen">
+          <div class="screen-icon">✦</div>
+          <p class="screen-kicker">MISIÓN DISPONIBLE</p>
+          <h2>¿Listo para despegar?</h2>
+          <p>Muévete con <kbd>WASD</kbd> o <kbd>←↑↓→</kbd> y recoge los paquetes antes de que te alcancen.</p>
+          <button class="action-button" id="startButton">Iniciar misión <span>→</span></button>
+        </div>
+        <div class="screen hidden" id="gameOverScreen">
+          <div class="screen-icon danger">×</div>
+          <p class="screen-kicker">SEÑAL PERDIDA</p>
+          <h2>Misión finalizada</h2>
+          <p>Tu puntuación fue <strong id="finalScore">000000</strong>. El espacio sigue esperando.</p>
+          <button class="action-button" id="restartButton">Reintentar <span>↻</span></button>
+        </div>
+      </div>
+      <div class="controls-hint"><span>⌨</span> Mueve la nave <b>·</b> <span>◉</span> Entrega paquetes <b>·</b> <span>✦</span> Sobrevive</div>
+    </section>
+
+    <footer class="game-footer">
+      <p>NEON COURIER <span>///</span> Diseñado y desarrollado por GenaWeb</p>
+      <button id="soundButton" class="sound-button" type="button" aria-label="Activar o desactivar sonido">♫ SONIDO: ON</button>
+    </footer>
+  </main>
+  <script src="js/game.js"></script>
+</body>
+</html>

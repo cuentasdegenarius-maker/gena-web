@@ -1,0 +1,15 @@
+# Archivos del sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs y archivos temporales
+*.log
+*.tmp
+*.swp
+
+# Dependencias y builds si el proyecto crece en el futuro
+node_modules/
+dist/
+build/

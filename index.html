@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GenaWeb · Desarrollador Full-Stack Argentino · Sitios Web y Aplicaciones Web</title>
+  <meta name="description" content="GenaWeb - Genaro Funes, desarrollador full-stack argentino especializado en React, Node.js y aplicaciones web personalizadas. Sitios web modernos, apps escalables y soluciones digitales para negocios en Argentina." />
+  <meta name="keywords" content="desarrollador web Argentina, React developer, Node.js, aplicaciones web, sitios web profesionales, GenaWeb" />
+  <meta name="author" content="Genaro Funes" />
+  <meta name="geo.region" content="AR" />
+  <meta name="geo.places" content="Argentina" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0e17'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='36' font-weight='700' text-anchor='middle' fill='%2322d3ee'%3EG%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta property="og:title" content="GenaWeb · Desarrollador Full-Stack Argentino" />
+  <meta property="og:description" content="Especializado en React, Node.js y aplicaciones web modernas para empresas en Argentina." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+</head>
+<body>
+  <header class="nav" id="siteHeader">
+    <div class="container nav__inner">
+      <a href="#inicio" class="nav__logo">Gena<span>Web</span></a>
+      <nav class="nav__menu" aria-label="Navegación principal">
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--small btn--primary" href="https://wa.me/5493544307853?text=Hola%20GenaWeb%2C%20quiero%20cotizar%20un%20proyecto." target="_blank" rel="noopener">Contactar</a>
+      <a class="btn btn--ghost email-btn" href="mailto:genarosimonfunes1@gmail.com" target="_blank" rel="noopener">Email</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="hero__badge"><span class="dot"></span> Desarrollador Full-Stack</span>
+          <h1>Construyo soluciones web <span class="gradient-text">escalables y de alto rendimiento</span></h1>
+          <p class="hero__text">Soy <strong>Genaro Funes</strong>, desarrollador full-stack especializado en crear aplicaciones web modernas con React, Node.js y tecnologías web avanzadas. Como GenaWeb, diseño y desarrollo soluciones digitales robustas que impulsan negocios y mejoran la experiencia del usuario.</p>
+          <div class="hero__actions">
+            <a href="#servicios" class="btn btn--primary">Ver servicios</a>
+            <a href="#contacto" class="btn btn--ghost">Contactarme</a>
+          </div>
+    <div class="hero__chips">
+      <span class="chip">React</span>
+      <span class="chip">Node.js</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">TypeScript</span>
+    </div>
+        </div>
+        <div class="hero__visual">
+          <div class="code-window" aria-hidden="true">
+            <div class="code-window__bar">
+              <span class="code-window__dot dot--red"></span>
+              <span class="code-window__dot dot--yellow"></span>
+              <span class="code-window__dot dot--green"></span>
+              <span class="code-window__title">genaweb.js</span>
+            </div>
+            <pre class="code-window__body"><code id="typedCode"></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">Sobre mí</span>
+          <h2>Un creador detrás de cada proyecto</h2>
+          <p class="section__lead">De la idea al producto final: diseño, código y entrega.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about__text reveal">
+            <p>Soy <span class="hl">Genaro Funes</span>, desarrollador full-stack especializado en crear aplicaciones web escalables con React y Node.js. Con experiencia en arquitectura de software, bases de datos y despliegues en la nube, convierto ideas complejas en soluciones digitales robustas que impulsan negocios y mejoran la experiencia del usuario.</p>
+            <p>Trato cada proyecto como si fuera mío: atención al detalle, rendimiento óptimo y una experiencia que deja huella. Ya sea un SaaS completo o una landing page simple, el objetivo es el mismo: que se vea bien, funcione rápido y logre lo que necesita.</p>
+          </div>
+          <div class="about__cards">
+            <article class="about-card reveal">
+              <div class="icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+              </div>
+              <div>
+                <h3>Páginas web</h3>
+                <p>Sitios modernos, rápidos y diseñados a la medida de tu marca.</p>
+              </div>
+            </article>
+            <article class="about-card reveal">
+              <div class="icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="10" y1="11" y2="11"/><line x1="8" x2="8" y1="9" y2="13"/><line x1="15" x2="15.01" y1="12" y2="12"/><line x1="18" x2="18.01" y1="10" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></svg>
+              </div>
+              <div>
+                <h3>Videojuegos</h3>
+                <p>Juegos 2D y 3D con mecánicas únicas y experiencia de juego cuidada.</p>
+              </div>
+            </article>
+            <article class="about-card reveal">
+              <div class="icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 12a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+              </div>
+              <div>
+                <h3>Proyectos digitales</h3>
+                <p>De la idea al producto: diseño, desarrollo y entrega final.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="servicios">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">Servicios</span>
+          <h2>Desarrollo web a medida para tu negocio</h2>
+          <p class="section__lead">Desde landing pages hasta aplicaciones web complejas, desarrollo full-stack con React y Node.js.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Sitio Web Empresarial</h3>
+            <p>Diseño profesional de varias páginas, optimizado para SEO y conversión para empresas serias.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="10" y1="11" y2="11"/><line x1="8" x2="8" y1="9" y2="13"/><line x1="15" x2="15.01" y1="12" y2="12"/><line x1="18" x2="18.01" y1="10" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></svg>
+            </div>
+            <h3>Aplicación Web Personalizada</h3>
+            <p>Aplicaciones complejas con autenticación, paneles de admin y funcionalidades a medida.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="21" x2="14" y1="4" y2="4"/><line x1="10" x2="3" y1="4" y2="4"/><line x1="21" x2="12" y1="12" y2="12"/><line x1="8" x2="3" y1="12" y2="12"/><line x1="21" x2="16" y1="20" y2="20"/><line x1="12" x2="3" y1="20" y2="20"/><line x1="14" x2="14" y1="2" y2="6"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="16" x2="16" y1="18" y2="22"/></svg>
+            </div>
+            <h3>Integración de APIs</h3>
+            <p>Conectamos tu aplicación con servicios externos, pagos y bases de datos para funcionalidad completa.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17.5 5 19.5 5a1 1 0 0 1 1 1z"/></svg>
+            </div>
+            <h3>Mantenimiento Técnico</h3>
+            <p>Soporte continuo, actualizaciones de seguridad y optimización de rendimiento para sitios críticos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="precios">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">Precios</span>
+          <h2>Invierte en tu proyecto digital</h2>
+          <p class="section__lead">Soluciones web profesionales con precios transparentes adaptados al mercado argentino.</p>
+        </div>
+        <div class="plans-grid">
+          <article class="plan reveal">
+            <h3>Página básica</h3>
+            <p class="plan__desc">Lo esencial para tener presencia en línea: diseño limpio, responsive y listo para publicar.</p>
+            <div class="plan__price">$32,000 <small>ARS</small></div>
+            <div class="plan__cta">
+              <a class="btn btn--ghost" href="https://wa.me/5493544307853?text=Hola%20GenaWeb%2C%20me%20interesa%20el%20plan%20P%C3%A1gina%20b%C3%A1sica." target="_blank" rel="noopener">Cotizar</a>
+            </div>
+          </article>
+          <article class="plan plan--featured reveal">
+            <span class="plan__badge">Más popular</span>
+            <h3>Página profesional</h3>
+            <p class="plan__desc">La opción favorita: secciones personalizadas, animaciones, optimización y soporte de lanzamiento.</p>
+            <div class="plan__price">$55,000 <small>ARS</small></div>
+            <div class="plan__cta">
+              <a class="btn btn--primary" href="https://wa.me/5493544307853?text=Hola%20GenaWeb%2C%20me%20interesa%20el%20plan%20P%C3%A1gina%20profesional." target="_blank" rel="noopener">Cotizar</a>
+            </div>
+          </article>
+          <article class="plan reveal">
+            <h3>Página completa</h3>
+            <p class="plan__desc">Proyecto a medida sin límites: todas las secciones y funcionalidades que tu idea requiera.</p>
+            <div class="plan__price">$85,000 <small>ARS</small></div>
+            <div class="plan__cta">
+              <a class="btn btn--ghost" href="https://wa.me/5493544307853?text=Hola%20GenaWeb%2C%20me%20interesa%20el%20plan%20P%C3%A1gina%20completa." target="_blank" rel="noopener">Cotizar</a>
+            </div>
+          </article>
+        </div>
+        <div class="extras">
+          <article class="extra reveal">
+            <div>
+              <h3>Catálogo de productos</h3>
+              <p>Muestra tus productos con fotos, descripciones y precios, con un diseño pensado para vender.</p>
+            </div>
+            <div class="extra__price"><span>desde $75,000</span><small>hasta $120,000 ARS</small></div>
+          </article>
+          <article class="extra reveal">
+            <div>
+              <h3>Funcionalidad extra</h3>
+              <p>Formularios, chat, pasarelas de pago o cualquier función adicional para tu proyecto.</p>
+            </div>
+            <div class="extra__price"><span>desde $10,000</span><small>hasta $20,000 ARS</small></div>
+          </article>
+          <article class="extra reveal">
+            <div>
+              <h3>Mantenimiento mensual</h3>
+              <p>Actualizaciones, respaldos y soporte mensual para mantener tu sitio seguro y actualizado.</p>
+            </div>
+            <div class="extra__price"><span>desde $25,000</span><small>hasta $30,000 ARS</small></div>
+          </article>
+        </div>
+        <p class="pricing-note">Todos los precios están en pesos argentinos (ARS). La inversión final depende del alcance de tu proyecto.</p>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="portfolio">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">Portfolio</span>
+          <h2>Proyectos Web Reales</h2>
+          <p class="section__lead">Aplicaciones web completas que demuestran experiencia técnica en React, Node.js y bases de datos.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project reveal">
+            <div class="project__cover cover--store">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/></svg>
+            </div>
+            <div class="project__body">
+              <h3>CRM Empresarial</h3>
+              <p>Sistema completo de gestión de clientes con seguimiento de relaciones, pipelines de ventas y reportes analíticos.</p>
+              <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project__cover cover--game">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="10" y1="11" y2="11"/><line x1="8" x2="8" y1="9" y2="13"/><line x1="15" x2="15.01" y1="12" y2="12"/><line x1="18" x2="18.01" y1="10" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></svg>
+            </div>
+            <div class="project__body">
+              <h3>Neon Courier · Juego Web</h3>
+              <p>Arcade jugable en el navegador: esquiva meteoritos, entrega paquetes y supera tu récord personal.</p>
+              <div class="tags">
+                <span class="tag">Canvas</span>
+                <span class="tag">JavaScript</span>
+                <a class="tag project__play" href="game.html">Jugar ahora ↗</a>
+              </div>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project__cover cover--tasks">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></svg>
+            </div>
+            <div class="project__body">
+              <h3>Panel de Analytics</h3>
+              <p>Dashboard de métricas con visualizaciones de datos, reportes programados y alertas personalizadas.</p>
+              <div class="tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">Chart.js</span>
+                <span class="tag">Redis</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="contact-card reveal">
+          <span class="section__tag">Contacto</span>
+          <h2>¿Tienes un proyecto en mente?</h2>
+          <p>Cuéntame qué quieres construir y te ayudo a llevarlo a la realidad. Respondo rápido por WhatsApp o email.</p>
+           <div class="contact-actions">
+             <a class="btn btn--primary" href="https://wa.me/5493544307853?text=Hola%20GenaWeb%2C%20quiero%20cotizar%20un%20proyecto." target="_blank" rel="noopener">
+               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.035-.458.113-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.005-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.652a11.882 11.882 0 0 0 5.706 1.455h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/>
+               Escríbeme por WhatsApp
+             </a>
+             <a class="btn btn--ghost email-btn" href="mailto:genarosimonfunes1@gmail.com" target="_blank" rel="noopener">
+               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5z"/></svg>
+               genarosimonfunes1@gmail.com
+             </a>
+           </div>
+          <div class="contact-info">
+            <a href="tel:+5493544307853">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +54 9 3544 307853
+            </a>
+            <a href="https://www.instagram.com/genarofuness" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              @genarofuness
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© <span id="year">2026</span> GenaWeb · Genaro Funes · Desarrollador Full-Stack · Argentina</p>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/genarofuness" target="_blank" rel="noopener" aria-label="Instagram de GenaWeb">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://wa.me/5493544307853?text=Hola%20GenaWeb%2C%20quiero%20cotizar%20un%20proyecto." target="_blank" rel="noopener" aria-label="WhatsApp de GenaWeb Argentina">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.035-.458.113-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.005-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.652a11.882 11.882 0 0 0 5.706 1.455h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
